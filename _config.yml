@@ -55,9 +55,9 @@ external_services:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false # set to true to enable search functionality (requires jekyll-lunr-js-search plugin)
 socials_in_search: true
-posts_in_search: true
+posts_in_search: false
 bib_search: true
 
 # Dimensions
@@ -98,10 +98,10 @@ lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false # set to true to enable pagination on the blog page
 
 related_blog_posts:
-  enabled: true
+  enabled: false # set to true to enable related posts on blog post pages
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -185,6 +185,7 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
+  - backup/
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
